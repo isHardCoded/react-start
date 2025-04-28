@@ -24,7 +24,21 @@ const products = [
 ]
 
 function App() {
-	return <></>
+	return (
+		<>
+			<ul>
+				{products.map(product => (
+					<li key={product.id}>
+						<Card
+							title={product.title}
+							desc={product.description}
+							price={product.price}
+						/>
+					</li>
+				))}
+			</ul>
+		</>
+	)
 }
 
 export default App
