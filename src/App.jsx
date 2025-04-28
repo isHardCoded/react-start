@@ -29,11 +29,7 @@ function App() {
 			<ul>
 				{products.map(product => (
 					<li key={product.id}>
-						<Card
-							title={product.title}
-							desc={product.description}
-							price={product.price}
-						/>
+						<Card {...product} />
 					</li>
 				))}
 			</ul>
