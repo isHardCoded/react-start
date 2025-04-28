@@ -1,8 +1,9 @@
-function Card() {
+function Card({ title, desc, price }) {
 	return (
 		<div>
-			<h3>Название карточки</h3>
-			<p>Описание карточки</p>
+			<h3>{title}</h3>
+			<p>{desc}</p>
+			<p>Цена: ${price}</p>
 			<button>Нажать</button>
 		</div>
 	)
