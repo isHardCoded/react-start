@@ -1,6 +1,8 @@
+import './index.css'
+
 function Card({ title, desc, price }) {
 	return (
-		<div>
+		<div className='card'>
 			<h3>{title}</h3>
 			<p>{desc}</p>
 			<p>Цена: ${price}</p>
