@@ -1,17 +1,10 @@
-import Card from './components/card'
 import './App.css'
-import { products } from './data/products'
+import ProductList from './components/product-list'
 
 function App() {
 	return (
 		<>
-			<ul className='product-list'>
-				{products.map(product => (
-					<li key={product.id}>
-						<Card {...product} />
-					</li>
-				))}
-			</ul>
+			<ProductList />
 		</>
 	)
 }

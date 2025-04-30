@@ -1,0 +1,10 @@
+.productList {
+	max-width: 800px;
+	flex-wrap: wrap;
+
+	display: flex;
+	gap: 10px;
+
+	list-style: none;
+	padding: 5px;
+}
