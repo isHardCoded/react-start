@@ -1,12 +1,18 @@
 import styles from './index.module.css'
 
-function Card({ title, desc, price }) {
+function Card({ title, description, price }) {
 	return (
 		<div className={styles.card}>
-			<h3>{title}</h3>
-			<p>{desc}</p>
-			<p>Цена: ${price}</p>
-			<button>Нажать</button>
+			<div>
+				<h3>{title}</h3>
+				<p>{description}</p>
+			</div>
+			<div>
+				<p>
+					Цена: $<span>{price}</span>
+				</p>
+				<button>Добавить в корзину</button>
+			</div>
 		</div>
 	)
 }
