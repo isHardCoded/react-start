@@ -1,0 +1,46 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 20px 0px;
+
+	border-bottom: 1px solid gainsboro;
+
+	nav {
+		ul {
+			display: flex;
+			gap: 30px;
+			list-style: none;
+
+			li {
+				a {
+					color: rgb(119, 119, 119);
+					font-weight: 600;
+					text-decoration: none;
+					transition: 0.1s ease all;
+
+					&:hover {
+						color: black;
+					}
+				}
+			}
+		}
+	}
+
+	div {
+		display: flex;
+		gap: 10px;
+		button {
+			outline: 0;
+			border: 0;
+			background: none;
+
+			cursor: pointer;
+
+			img {
+				width: 24px;
+			}
+		}
+	}
+}
