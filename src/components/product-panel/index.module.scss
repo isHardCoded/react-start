@@ -5,21 +5,58 @@
 	justify-content: space-between;
 	align-items: center;
 
-	div {
-		display: flex;
-		align-items: center;
-		gap: 5px;
+	.panelMenu {
+		div {
+			display: flex;
+			align-items: center;
+			gap: 5px;
 
-		border: 1px solid gainsboro;
-		padding: 10px;
+			border: 1px solid gainsboro;
+			padding: 10px;
 
-		border-radius: 5px;
-		font-size: 14px;
+			border-radius: 5px;
+			font-size: 14px;
 
-		cursor: pointer;
+			cursor: pointer;
 
-		img {
-			width: 24px;
+			img {
+				width: 24px;
+			}
+		}
+
+		ul {
+			position: absolute;
+			width: 162px;
+			border: 1px solid gainsboro;
+			font-size: 14px;
+			list-style: none;
+
+			display: flex;
+			flex-direction: column;
+
+			border-radius: 5px;
+			box-shadow: -6px 28px 38px 0px rgba(34, 60, 80, 0.2);
+
+			li {
+				padding: 10px;
+				background-color: white;
+				cursor: pointer;
+
+				&:hover {
+					background-color: rgb(20, 102, 255);
+					color: white;
+				}
+
+				&:first-child {
+					border-top-right-radius: 5px;
+					border-top-left-radius: 5px;
+				}
+
+				&:last-child {
+					border-bottom-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+			}
 		}
 	}
 }
