@@ -1,0 +1,25 @@
+.panel {
+	padding: 15px 0px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	div {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		border: 1px solid gainsboro;
+		padding: 10px;
+
+		border-radius: 5px;
+		font-size: 14px;
+
+		cursor: pointer;
+
+		img {
+			width: 24px;
+		}
+	}
+}
