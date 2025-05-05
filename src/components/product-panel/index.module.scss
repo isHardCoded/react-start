@@ -42,6 +42,11 @@
 				background-color: white;
 				cursor: pointer;
 
+				&.active {
+					background-color: rgb(20, 102, 255);
+					color: white;
+				}
+
 				&:hover {
 					background-color: rgb(20, 102, 255);
 					color: white;
