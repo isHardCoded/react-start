@@ -23,7 +23,9 @@ function ProductList() {
 		<>
 			<ul className={styles.productList}>
 				{products.map(product => (
-					<li></li>
+					<li key={product.id}>
+						<Card {...product} />
+					</li>
 				))}
 			</ul>
 		</>
