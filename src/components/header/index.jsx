@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import CartIcon from '../../assets/icons/cart-icon.svg'
 import UserIcon from '../../assets/icons/user-icon.svg'
 import styles from './index.module.scss'
@@ -9,10 +10,10 @@ function Header() {
 			<nav>
 				<ul>
 					<li>
-						<a href='#'>Главная</a>
+						<Link to={{ pathname: '/' }}>Home</Link>
 					</li>
 					<li>
-						<a href='#'>Каталог</a>
+						<Link to={{ pathname: '/catalog' }}>Catalog</Link>
 					</li>
 				</ul>
 			</nav>
